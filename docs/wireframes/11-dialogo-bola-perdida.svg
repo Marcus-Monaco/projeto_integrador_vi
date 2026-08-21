@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="1060" viewBox="0 0 1060 1060" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+<defs>
+  <pattern id="hA" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#8C8C8C" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="hB" width="5" height="5" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="5" stroke="#6E6E6E" stroke-width="1.1"/>
+    <line x1="0" y1="0" x2="5" y2="0" stroke="#6E6E6E" stroke-width="1.1"/>
+  </pattern>
+  <pattern id="hX" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#EDEDED" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1" fill="#D8D8D8"/>
+  </pattern>
+  <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#2A6FB5"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="1060" height="1060" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="60" y="46" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="800" fill="#1E1E1E" text-anchor="start" letter-spacing="-0.2">Diálogo — bola perdida</text>
+<text x="60" y="68" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#5A5A5A" text-anchor="start">A bola não foi rebatida: reiniciar o nível atual ou passar para o próximo</text>
+<text x="1016" y="46" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#2A6FB5" text-anchor="end">WF-11</text>
+<text x="1016" y="68" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#8C8C8C" text-anchor="end">Brick Breaker · Projeto Integrador VI-A · wireframe v1</text>
+<line x1="60" y1="88" x2="1016" y2="88" stroke="#3A3A3A" stroke-width="1.4"/>
+<rect x="48" y="104" width="384" height="824" rx="34" fill="#FBFBFB" stroke="#3A3A3A" stroke-width="2"/>
+<rect x="60" y="116" width="360" height="800" rx="4" fill="#FFFFFF" stroke="#C8C8C8" stroke-width="1"/>
+<rect x="60" y="116" width="360" height="20" rx="0" fill="url(#dots)" stroke="none" stroke-width="1"/><line x1="60" y1="136" x2="420" y2="136" stroke="#C8C8C8" stroke-width="1" stroke-dasharray="4 3"/><text x="240" y="130" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8.5" font-weight="400" fill="#8C8C8C" text-anchor="middle">status bar oculta — immersive sticky (requisito a)</text>
+<rect x="60" y="136" width="360" height="44" rx="0" fill="#F4F4F4" stroke="#C8C8C8" stroke-width="1" opacity="0.45"/>
+<text x="72" y="166" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#8C8C8C" text-anchor="start">NÍVEL 3 / 5</text>
+<g opacity="0.28"><rect x="72" y="204" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="72" y="204" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="156.75" y="204" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="156.75" y="204" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="241.5" y="204" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="241.5" y="204" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="326.25" y="204" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="326.25" y="204" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="114.38" y="225" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="114.38" y="225" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="199.13" y="225" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="199.13" y="225" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="283.88" y="225" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="283.88" y="225" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="368.63" y="225" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="368.63" y="225" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="72" y="246" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="72" y="246" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="156.75" y="246" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="156.75" y="246" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="241.5" y="246" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="241.5" y="246" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="326.25" y="246" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="326.25" y="246" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="114.38" y="267" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="114.38" y="267" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="199.13" y="267" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="199.13" y="267" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="283.88" y="267" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="283.88" y="267" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="368.63" y="267" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="368.63" y="267" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="72" y="288" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="72" y="288" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="156.75" y="288" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="156.75" y="288" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="241.5" y="288" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="241.5" y="288" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="326.25" y="288" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="326.25" y="288" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="114.38" y="309" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="114.38" y="309" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="199.13" y="309" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="199.13" y="309" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="283.88" y="309" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="283.88" y="309" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/>
+<rect x="368.63" y="309" width="39.38" height="18" rx="2" fill="#F4F4F4" stroke="none" stroke-width="1"/>
+<rect x="368.63" y="309" width="39.38" height="18" rx="2" fill="none" stroke="#9A9A9A" stroke-width="1.1"/></g>
+<rect x="60" y="116" width="360" height="800" rx="0" fill="#1E1E1E" stroke="none" stroke-width="1" opacity="0.42"/>
+<rect x="84" y="352" width="312" height="330" rx="14" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.6"/>
+<circle cx="240" cy="406" r="24" fill="#F4F4F4" stroke="#A9A9A9" stroke-width="1.4"/>
+<circle cx="240" cy="406" r="8" fill="#6E6E6E" stroke="none" stroke-width="1"/>
+<text x="240" y="456" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="800" fill="#1E1E1E" text-anchor="middle">Você perdeu a bola</text>
+<text x="240" y="478" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#5A5A5A" text-anchor="middle">O que deseja fazer agora?</text>
+<rect x="104" y="500" width="272" height="52" rx="8" fill="#A9A9A9" stroke="#3F3F3F" stroke-width="1.6"/><text x="240" y="531.67" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">REINICIAR O NÍVEL 3</text>
+<rect x="104" y="562" width="272" height="52" rx="8" fill="#F4F4F4" stroke="#A9A9A9" stroke-width="1.4"/><text x="240" y="593" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#1E1E1E" text-anchor="middle" letter-spacing="0.8">IR PARA O NÍVEL 4</text>
+<rect x="104" y="626" width="272" height="38" rx="8" fill="none" stroke="#A9A9A9" stroke-width="1.2" stroke-dasharray="5 4"/><text x="240" y="649.33" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#5A5A5A" text-anchor="middle" letter-spacing="0.8">VOLTAR AO MENU</text>
+<circle cx="240" cy="366" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="240" y="370" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<circle cx="72" cy="526" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="72" y="530" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<circle cx="72" cy="588" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="72" y="592" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<circle cx="72" cy="645" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="72" y="649" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<circle cx="396" cy="256" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="396" y="260" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<rect x="60" y="116" width="360" height="800" rx="4" fill="none" stroke="#3A3A3A" stroke-width="1.2"/>
+<text x="240" y="950" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">360 × 800 dp  ·  1 px = 1 dp  ·  1080 × 2400 px @ xxhdpi</text>
+<text x="476" y="126" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start" letter-spacing="1.4">ANOTAÇÕES DE COMPORTAMENTO E ESPECIFICAÇÃO</text>
+<line x1="476" y1="134" x2="1016" y2="134" stroke="#C8C8C8" stroke-width="1"/>
+<text x="476" y="166" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#2A6FB5" text-anchor="start" letter-spacing="1.1">GATILHO</text>
+<line x1="476" y1="171" x2="1016" y2="171" stroke="#E3EDF7" stroke-width="2"/>
+<circle cx="486" cy="184" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="188" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="504" y="188" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Quando aparece</text>
+<text x="504" y="203" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">No instante em que a bola cruza a linha de perda sem tocar o paddle. O</text>
+<text x="504" y="216" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">laço de jogo é pausado (não encerrado): a parede, a pontuação e a posição</text>
+<text x="504" y="229" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">do paddle continuam em memória.</text>
+<text x="476" y="258" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#2A6FB5" text-anchor="start" letter-spacing="1.1">AS DUAS ESCOLHAS EXIGIDAS (requisito g)</text>
+<line x1="476" y1="263" x2="1016" y2="263" stroke="#E3EDF7" stroke-width="2"/>
+<circle cx="486" cy="276" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="280" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="504" y="280" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Reiniciar o nível atual</text>
+<text x="504" y="295" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">Reconstrói a parede do nível corrente pelo mesmo método (mesma semente,</text>
+<text x="504" y="308" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">portanto parede idêntica), devolve a bola ao paddle e toca de novo o som</text>
+<text x="504" y="321" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">de início de fase.</text>
+<circle cx="486" cy="340" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="344" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="504" y="344" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Passar para o próximo nível</text>
+<text x="504" y="359" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">Avança sem exigir que o nível atual seja concluído. O texto do botão</text>
+<text x="504" y="372" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">nomeia o nível de destino ("IR PARA O NÍVEL 4") para não restar dúvida. No</text>
+<text x="504" y="385" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">nível 5 este botão é substituído por "FINALIZAR PARTIDA".</text>
+<circle cx="486" cy="404" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="408" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="504" y="408" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Saída de emergência</text>
+<text x="504" y="423" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">Terceira opção, terciária, para abandonar a partida e voltar ao menu</text>
+<text x="504" y="436" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">principal.</text>
+<text x="476" y="465" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#2A6FB5" text-anchor="start" letter-spacing="1.1">ESPECIFICAÇÃO DO DIÁLOGO</text>
+<line x1="476" y1="470" x2="1016" y2="470" stroke="#E3EDF7" stroke-width="2"/>
+<circle cx="486" cy="483" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="487" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="504" y="487" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Modal bloqueante</text>
+<text x="504" y="502" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">Fundo escurecido a 42% de opacidade sobre o jogo congelado, deixando o</text>
+<text x="504" y="515" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">contexto visível. O diálogo não é cancelável: nem o toque fora dele nem o</text>
+<text x="504" y="528" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">gesto de voltar o fecham, porque o enunciado exige uma escolha explícita.</text>
+<circle cx="486" cy="547" r="11" fill="#2A6FB5" stroke="none" stroke-width="1"/><text x="486" y="551" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="504" y="551" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#1E1E1E" text-anchor="start">Vidas</text>
+<text x="504" y="566" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">Cada bola perdida consome uma vida. Zeradas as vidas, em vez deste diálogo</text>
+<text x="504" y="579" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">é exibida a tela de fim de jogo (WF-14).</text>
+<line x1="60" y1="994" x2="1016" y2="994" stroke="#C8C8C8" stroke-width="1"/>
+<text x="60" y="1016" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#8C8C8C" text-anchor="start" letter-spacing="1.2">REQUISITO ATENDIDO</text>
+<text x="60" y="1034" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#1E1E1E" text-anchor="start">(g) perguntar ao usuário se deseja reiniciar o nível atual ou ir para o próximo</text>
+<text x="1016" y="1034" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#8C8C8C" text-anchor="end">sobreposição — não é uma tela nova</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="860" viewBox="0 0 1240 860" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+<defs>
+  <pattern id="hA" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#8C8C8C" stroke-width="1.2"/>
+  </pattern>
+  <pattern id="hB" width="5" height="5" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="5" stroke="#6E6E6E" stroke-width="1.1"/>
+    <line x1="0" y1="0" x2="5" y2="0" stroke="#6E6E6E" stroke-width="1.1"/>
+  </pattern>
+  <pattern id="hX" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#EDEDED" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1" fill="#D8D8D8"/>
+  </pattern>
+  <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#2A6FB5"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="1240" height="860" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="70" y="52" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="800" fill="#1E1E1E" text-anchor="start">Fluxo de navegação</text>
+<text x="70" y="74" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#5A5A5A" text-anchor="start">Mapa das telas e das transições entre elas</text>
+<text x="1190" y="52" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#2A6FB5" text-anchor="end">WF-00</text>
+<text x="1190" y="74" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#8C8C8C" text-anchor="end">Brick Breaker · Projeto Integrador VI-A</text>
+<line x1="70" y1="92" x2="1190" y2="92" stroke="#3A3A3A" stroke-width="1.4"/>
+<path d="M 224 151 H 282" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="255" y="143" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="middle">auto</text>
+<path d="M 464 151 H 552" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="510" y="143" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="middle">JOGAR</text>
+<path d="M 744 151 H 832" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="790" y="143" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="middle">auto</text>
+<path d="M 375 186 V 242" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="383" y="220" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="start">INTEGRANTES</text>
+<path d="M 375 310 V 336" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<path d="M 930 186 V 254" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="938" y="226" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="start">pausa</text>
+<path d="M 930 318 V 380" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<path d="M 930 448 V 514" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="938" y="487" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="start">sem vidas</text>
+<path d="M 375 250 V 200 H 375" fill="none" stroke="#8C8C8C" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#seta)"/>
+<path d="M 930 120 C 930 30, 560 30, 560 110" fill="none" stroke="#2A6FB5" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#seta)"/>
+<text x="745" y="24" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="700" fill="#2A6FB5" text-anchor="middle">nível concluído → próximo nível (automático, requisito c)</text>
+<path d="M 1020 416 C 1120 416, 1120 170, 1030 152" fill="none" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="1130" y="300" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="middle">reiniciar nível</text>
+<text x="1130" y="314" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#2A6FB5" text-anchor="middle">ou pular (req. g)</text>
+<path d="M 840 550 C 640 600, 420 560, 375 190" fill="none" stroke="#8C8C8C" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#seta)"/>
+<text x="600" y="590" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#8C8C8C" text-anchor="start">voltar ao menu</text>
+<path d="M 650 262 V 200" fill="none" stroke="#C8C8C8" stroke-width="1.2" stroke-dasharray="3 3"/>
+<rect x="70" y="120" width="150" height="62" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="145" y="146" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Splash</text>
+<text x="145" y="164" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-01</text>
+<rect x="290" y="120" width="170" height="62" rx="10" fill="#E6E6E6" stroke="#3A3A3A" stroke-width="1.8"/>
+<text x="375" y="146" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Menu principal</text>
+<text x="375" y="164" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-02</text>
+<rect x="290" y="250" width="170" height="56" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="375" y="276" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Integrantes</text>
+<text x="375" y="294" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-03</text>
+<rect x="290" y="344" width="170" height="56" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="375" y="370" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Configurações</text>
+<text x="375" y="388" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-04</text>
+<rect x="560" y="120" width="180" height="62" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="650" y="146" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Transição de nível</text>
+<text x="650" y="164" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-12</text>
+<rect x="840" y="120" width="180" height="62" rx="10" fill="#E6E6E6" stroke="#3A3A3A" stroke-width="1.8"/>
+<text x="930" y="146" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Tela de jogo</text>
+<text x="930" y="164" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-05</text>
+<rect x="840" y="262" width="180" height="52" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="930" y="288" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Pausa</text>
+<text x="930" y="306" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-13</text>
+<rect x="840" y="388" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="930" y="414" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Bola perdida</text>
+<text x="930" y="432" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-11</text>
+<rect x="840" y="522" width="180" height="56" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="930" y="548" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Fim de jogo</text>
+<text x="930" y="566" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-14</text>
+<rect x="560" y="262" width="180" height="76" rx="10" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1.2"/>
+<text x="650" y="288" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E1E1E" text-anchor="middle">Níveis 1 a 5</text>
+<text x="650" y="306" font-family="'Cascadia Mono','Consolas','DejaVu Sans Mono',monospace" font-size="10" font-weight="400" fill="#8C8C8C" text-anchor="middle">WF-06…10</text>
+<rect x="576" y="316" width="24" height="12" rx="2" fill="#E6E6E6" stroke="#6E6E6E" stroke-width="1"/>
+<text x="588" y="325" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" fill="#5A5A5A" text-anchor="middle">1</text>
+<rect x="606" y="316" width="24" height="12" rx="2" fill="#E6E6E6" stroke="#6E6E6E" stroke-width="1"/>
+<text x="618" y="325" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" fill="#5A5A5A" text-anchor="middle">2</text>
+<rect x="636" y="316" width="24" height="12" rx="2" fill="#E6E6E6" stroke="#6E6E6E" stroke-width="1"/>
+<text x="648" y="325" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" fill="#5A5A5A" text-anchor="middle">3</text>
+<rect x="666" y="316" width="24" height="12" rx="2" fill="#E6E6E6" stroke="#6E6E6E" stroke-width="1"/>
+<text x="678" y="325" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" fill="#5A5A5A" text-anchor="middle">4</text>
+<rect x="696" y="316" width="24" height="12" rx="2" fill="#E6E6E6" stroke="#6E6E6E" stroke-width="1"/>
+<text x="708" y="325" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="8" font-weight="700" fill="#5A5A5A" text-anchor="middle">5</text>
+<rect x="70" y="640" width="520" height="150" rx="10" fill="#FAFAFA" stroke="#C8C8C8" stroke-width="1"/>
+<text x="88" y="668" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start" letter-spacing="1.2">LEGENDA</text>
+<line x1="88" y1="690" x2="128" y2="690" stroke="#2A6FB5" stroke-width="1.4" marker-end="url(#seta)"/>
+<text x="140" y="694" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">transição automática ou ação principal</text>
+<line x1="88" y1="716" x2="128" y2="716" stroke="#8C8C8C" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#seta)"/>
+<text x="140" y="720" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">retorno acionado pelo usuário</text>
+<rect x="88" y="736" width="40" height="16" rx="4" fill="#E6E6E6" stroke="#3A3A3A" stroke-width="1.6"/>
+<text x="140" y="749" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#5A5A5A" text-anchor="start">tela central do aplicativo</text>
+<text x="88" y="772" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#8C8C8C" text-anchor="start">WF-11, WF-12 e WF-13 são sobreposições sobre WF-05, não Activities novas.</text>
+<rect x="626" y="640" width="564" height="150" rx="10" fill="#FAFAFA" stroke="#C8C8C8" stroke-width="1"/>
+<text x="644" y="668" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#8C8C8C" text-anchor="start" letter-spacing="1.2">RASTREABILIDADE COM O ENUNCIADO</text>
+<text x="644" y="692" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(a) tela cheia — todas as telas usam modo imersivo</text>
+<text x="644" y="709" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(b) três opções na tela inicial — WF-02 → WF-03, WF-12, WF-04</text>
+<text x="644" y="726" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(c) cinco paredes + avanço automático — WF-06 a WF-10 e WF-12</text>
+<text x="644" y="743" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(d) colisão controlada — WF-05</text>
+<text x="644" y="760" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(e) dois sons — WF-12 (fase) e WF-05 (paddle)</text>
+<text x="644" y="777" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" font-weight="400" fill="#5A5A5A" text-anchor="start">(g) reiniciar ou pular nível — WF-11</text>
+</svg>

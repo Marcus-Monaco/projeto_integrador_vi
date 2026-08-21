@@ -1,0 +1,157 @@
+{
+  "gerado_em": "2026-08-21",
+  "malha_canonica": 8,
+  "tamanhos": {
+    "Pequeno": 10,
+    "Médio": 8,
+    "Grande": 6
+  },
+  "niveis": [
+    {
+      "nivel": 1,
+      "nome": "Muralha",
+      "metodo": "Mapa fixo literal",
+      "linhas": 5,
+      "colunas": 8,
+      "mapa": [
+        "11111111",
+        "11111111",
+        "11111111",
+        "11111111",
+        "11111111"
+      ],
+      "destrutiveis": 40,
+      "indestrutiveis": 0,
+      "acertos": 40,
+      "por_resistencia": {
+        "1": 40,
+        "2": 0,
+        "3": 0,
+        "X": 0
+      },
+      "dificuldade": 1
+    },
+    {
+      "nivel": 2,
+      "nome": "Pirâmide",
+      "metodo": "Meia matriz + espelhamento",
+      "linhas": 5,
+      "colunas": 8,
+      "mapa": [
+        "...11...",
+        "..1111..",
+        ".222222.",
+        "22222222",
+        "33333333"
+      ],
+      "destrutiveis": 28,
+      "indestrutiveis": 0,
+      "acertos": 58,
+      "por_resistencia": {
+        "1": 6,
+        "2": 14,
+        "3": 8,
+        "X": 0
+      },
+      "dificuldade": 2
+    },
+    {
+      "nivel": 3,
+      "nome": "Xadrez",
+      "metodo": "Regra matemática sobre (linha, coluna)",
+      "linhas": 6,
+      "colunas": 8,
+      "mapa": [
+        "1.1.1.1.",
+        ".1.1.1.1",
+        "2.2.2.2.",
+        ".2.2.2.2",
+        "3.3.3.3.",
+        ".3.3.3.3"
+      ],
+      "destrutiveis": 24,
+      "indestrutiveis": 0,
+      "acertos": 48,
+      "por_resistencia": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "X": 0
+      },
+      "dificuldade": 3
+    },
+    {
+      "nivel": 4,
+      "nome": "Campo minado",
+      "metodo": "Procedural com semente fixa",
+      "linhas": 6,
+      "colunas": 8,
+      "mapa": [
+        "..221.1.",
+        ".11.1212",
+        "121..131",
+        "112.2.12",
+        "1.1223.2",
+        ".1.1.23."
+      ],
+      "destrutiveis": 32,
+      "indestrutiveis": 0,
+      "acertos": 50,
+      "por_resistencia": {
+        "1": 17,
+        "2": 12,
+        "3": 3,
+        "X": 0
+      },
+      "dificuldade": 4
+    },
+    {
+      "nivel": 5,
+      "nome": "Fortaleza",
+      "metodo": "Híbrido — moldura fixa + miolo procedural",
+      "linhas": 6,
+      "colunas": 8,
+      "mapa": [
+        "33333333",
+        "X111.2.X",
+        "X1.1.12X",
+        "X1.1..1X",
+        "X11112.X",
+        "22222222"
+      ],
+      "destrutiveis": 32,
+      "indestrutiveis": 8,
+      "acertos": 59,
+      "por_resistencia": {
+        "1": 13,
+        "2": 11,
+        "3": 8,
+        "X": 8
+      },
+      "dificuldade": 5
+    }
+  ],
+  "exemplo_reamostragem": {
+    "origem_8": [
+      "...11...",
+      "..1111..",
+      ".222222.",
+      "22222222",
+      "33333333"
+    ],
+    "destino_10": [
+      "....11....",
+      "..111111..",
+      ".22222222.",
+      "2222222222",
+      "3333333333"
+    ],
+    "destino_6": [
+      "..11..",
+      "..11..",
+      ".2222.",
+      "222222",
+      "333333"
+    ]
+  }
+}
