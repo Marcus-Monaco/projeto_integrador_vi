@@ -620,7 +620,7 @@ function wf03() {
   // Nomes reais do grupo. Os marcados com [sobrenome] ainda precisam ser completados —
   // o enunciado exige NOME E SOBRENOME de todos os integrantes.
   const linhas = [
-    ['Marcus [sobrenome]', 'Motor do jogo'],
+    ['Marcus Sena', 'Motor do jogo'],
     ['Lucas Hoffman', 'Telas e navegação'],
     ['Henrique [sobrenome]', 'Níveis e paredes'],
     ['Luan [sobrenome]', 'Áudio e assets'],

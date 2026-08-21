@@ -88,7 +88,9 @@ Lista de **nome e sobrenome de todos os integrantes**, alimentada por uma `Recyc
 lista estática no código. A frente de trabalho é informação complementar e pode ser retirada
 sem quebrar o layout.
 
-> ⚠️ Três sobrenomes ainda estão pendentes (Marcus, Henrique e Luan) — ver o aviso no [README](../README.md#integrantes-do-grupo).
+> ⚠️ Faltam os sobrenomes de **Henrique** e **Luan**. O enunciado exige nome **e** sobrenome de todos.
+> Ao completar, atualizar o array `linhas` da função `wf03` em [`tools/gen-wireframes.mjs`](../tools/gen-wireframes.mjs)
+> e a tabela do [README](../README.md#integrantes-do-grupo), regerando com `node tools/gen-wireframes.mjs`.
 
 ---
 

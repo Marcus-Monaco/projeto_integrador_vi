@@ -23,19 +23,11 @@ por 5 níveis com paredes construídas por métodos diferentes.
 
 | Nome e sobrenome | Frente de trabalho |
 | --- | --- |
-| Marcus *[sobrenome]* | Motor do jogo (game loop, física, colisão) |
+| Marcus Sena | Motor do jogo (game loop, física, colisão) |
 | Lucas Hoffman | Telas e navegação |
 | Henrique *[sobrenome]* | Níveis e geração de paredes |
 | Luan *[sobrenome]* | Áudio e assets |
 | Mauricio Porgeri | Testes e geração do APK |
-
-> ⚠️ **Faltam três sobrenomes.** O enunciado exige nome **e sobrenome** de todos os integrantes.
-> Ao completar, atualizar em dois lugares: esta tabela e o array `linhas` em
-> [`tools/gen-wireframes.mjs`](tools/gen-wireframes.mjs) (função `wf03`), rodando em seguida
-> `node tools/gen-wireframes.mjs` para atualizar o wireframe
-> [WF-03](docs/wireframes/03-integrantes.svg).
->
-> A divisão de frentes de trabalho acima é uma proposta — ajustem conforme o combinado do grupo.
 
 ---
 
@@ -89,10 +81,5 @@ Saída: os 15 arquivos `.svg` em `docs/wireframes/` e o resumo `paredes.json`.
 ---
 
 ## Como contribuir (fluxo do grupo)
-
-1. `git switch -c feat/<assunto>` a partir de `main`
-2. Commits pequenos e descritivos em português
-3. Abrir Pull Request para `main` e pedir revisão de outro integrante
-4. `main` sempre em estado entregável
 
 O fluxo completo e as convenções estão em [docs/01-ambiente-tecnologias.md](docs/01-ambiente-tecnologias.md#7-organização-do-trabalho-em-grupo).
