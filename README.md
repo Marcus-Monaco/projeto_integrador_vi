@@ -25,8 +25,8 @@ por 5 níveis com paredes construídas por métodos diferentes.
 | --- | --- |
 | Marcus Sena | Motor do jogo (game loop, física, colisão) |
 | Lucas Hoffman | Telas e navegação |
-| Henrique *[sobrenome]* | Níveis e geração de paredes |
-| Luan *[sobrenome]* | Áudio e assets |
+| Henrique Bin Estramar | Níveis e geração de paredes |
+| Luan Bossardi | Áudio e assets |
 | Mauricio Porgeri | Testes e geração do APK |
 
 ---
