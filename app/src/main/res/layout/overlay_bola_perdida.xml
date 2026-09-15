@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- WF-11 Dialogo de bola perdida: modal bloqueante, fundo escurecido a 42% -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/veu_42"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/fundo_cartao"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/perdidaNivel"
+            style="@style/Rotulo"
+            android:textColor="@color/alerta" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/voce_perdeu_a_bola"
+            android:textColor="@color/texto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/o_que_deseja"
+            android:textColor="@color/texto_secundario" />
+
+        <Button
+            android:id="@+id/botaoReiniciarNivel"
+            style="@style/Botao.Primario"
+            android:layout_height="58dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/botaoProximoNivel"
+            style="@style/Botao.Secundario"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/botaoMenuPerdida"
+            style="@style/Botao.Terciario"
+            android:layout_marginTop="16dp"
+            android:text="@string/voltar_ao_menu" />
+    </LinearLayout>
+</FrameLayout>
