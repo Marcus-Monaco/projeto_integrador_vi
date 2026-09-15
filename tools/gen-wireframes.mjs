@@ -617,17 +617,16 @@ function wf02() {
 
 /* --- WF-03 Integrantes --------------------------------------------- */
 function wf03() {
-  // Nomes reais do grupo. Os marcados com [sobrenome] ainda precisam ser completados —
-  // o enunciado exige NOME E SOBRENOME de todos os integrantes.
+  // Nomes reais do grupo — o enunciado exige NOME E SOBRENOME de todos os integrantes.
   const linhas = [
     ['Marcus Sena', 'Motor do jogo'],
     ['Lucas Hoffman', 'Telas e navegação'],
-    ['Henrique [sobrenome]', 'Níveis e paredes'],
-    ['Luan [sobrenome]', 'Áudio e assets'],
+    ['Henrique Bin Estramar', 'Níveis e paredes'],
+    ['Luan Bossardi', 'Áudio e assets'],
     ['Mauricio Porgeri', 'Testes e geração do APK'],
   ];
   const els = [faixaImersiva(), appBar(dy + 20, 'Integrantes do grupo')];
-  els.push(txt(dx + M, dy + 108, 'GRUPO XX — TURMA XXXX', { size: 10, weight: 700, fill: T.ink3, ls: 1.2 }));
+  els.push(txt(dx + M, dy + 108, 'PROJETO INTEGRADOR VI-A · 2026/2', { size: 10, weight: 700, fill: T.ink3, ls: 1.2 }));
   linhas.forEach(([nome, papel], i) => {
     const y = dy + 126 + i * 78;
     els.push(rect(dx + M, y, DW - 2 * M, 66, { rx: 8, fill: T.f0, stroke: T.hair }));
