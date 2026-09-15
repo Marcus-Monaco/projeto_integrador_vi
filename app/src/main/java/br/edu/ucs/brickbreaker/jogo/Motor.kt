@@ -4,6 +4,8 @@ import br.edu.ucs.brickbreaker.niveis.GeometriaParede
 import br.edu.ucs.brickbreaker.niveis.GeradorDeParede
 import br.edu.ucs.brickbreaker.niveis.Parede
 import br.edu.ucs.brickbreaker.niveis.Tijolo
+import kotlin.math.abs
+import kotlin.math.atan2
 import kotlin.math.ceil
 import kotlin.math.cos
 import kotlin.math.min
@@ -145,10 +147,7 @@ class Motor(private val densidade: Float) {
         if (!telaConfigurada || !paredeMontada) return
         if (estado == Estado.PAUSADO || estado == Estado.BOLA_PERDIDA || estado == Estado.NIVEL_CONCLUIDO) return
 
-        if (pilotoAutomatico && estado == Estado.JOGANDO) {
-            // mira um ponto levemente fora do centro para a bola sair com angulo
-            paddle.alvoX = bola.x + paddle.largura * 0.18f * sin(bola.y / dp(90f))
-        }
+        if (pilotoAutomatico && estado == Estado.JOGANDO) paddle.alvoX = alvoDoPiloto()
         paddle.seguirAlvo(dt, 0f, largura)
 
         when (estado) {
@@ -156,6 +155,21 @@ class Motor(private val densidade: Float) {
             Estado.JOGANDO -> simular(dt)
             else -> Unit
         }
+    }
+
+    /**
+     * Modo demonstracao: posiciona o paddle para que a rebatida saia na direcao do tijolo restante
+     * mais baixo. Usa a mesma regra de angulo de [rebaterNoPaddle], so que ao contrario.
+     */
+    private fun alvoDoPiloto(): Float {
+        val alvo = parede.tijolos
+            .filter { it.destrutivel && it.vivo }
+            .maxByOrNull { it.linha * largura - abs(it.caixa.centroX - bola.x) }
+            ?: return bola.x
+        val dx = alvo.caixa.centroX - bola.x
+        val dy = paddle.topo - alvo.caixa.base
+        val angulo = Math.toDegrees(atan2(dx, dy).toDouble()).toFloat().coerceIn(-55f, 55f)
+        return bola.x - (angulo / ANGULO_MAXIMO_GRAUS) * paddle.largura / 2f
     }
 
     /** Limita o deslocamento por passo a meio tijolo, subdividindo o quadro (doc 03, secao 7.1). */
