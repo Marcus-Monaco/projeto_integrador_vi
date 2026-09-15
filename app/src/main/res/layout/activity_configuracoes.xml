@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- WF-04 Configuracoes: padrao de cores e tamanho dos tijolos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/barra"
+        layout="@layout/barra_superior" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- 1. paletas pre-definidas + livre -->
+            <TextView
+                style="@style/Rotulo"
+                android:text="@string/padrao_de_cores" />
+
+            <RadioGroup
+                android:id="@+id/grupoPaleta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/paletaClassico"
+                    style="@style/Opcao"
+                    android:text="@string/classico" />
+
+                <RadioButton
+                    android:id="@+id/paletaNeon"
+                    style="@style/Opcao"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/neon" />
+
+                <RadioButton
+                    android:id="@+id/paletaMono"
+                    style="@style/Opcao"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/mono" />
+
+                <RadioButton
+                    android:id="@+id/paletaLivre"
+                    style="@style/Opcao"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/livre" />
+            </RadioGroup>
+
+            <!-- 2. uma cor por resistencia -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fundo_cartao"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cores_por_resistencia"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/amostra1"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/amostra_cor" />
+
+                    <View
+                        android:id="@+id/amostra2"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/amostra_cor" />
+
+                    <View
+                        android:id="@+id/amostra3"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/amostra_cor" />
+
+                    <View
+                        android:id="@+id/amostraX"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/amostra_cor" />
+
+                    <TextView
+                        android:id="@+id/editarCores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:gravity="center"
+                        android:text="@string/editar"
+                        android:textColor="@color/primario"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 3. tamanho = numero de colunas -->
+            <TextView
+                style="@style/Rotulo"
+                android:layout_marginTop="24dp"
+                android:text="@string/tamanho_dos_tijolos" />
+
+            <RadioGroup
+                android:id="@+id/grupoTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tamanhoPequeno"
+                    style="@style/Opcao"
+                    android:layout_height="64dp"
+                    android:text="@string/pequeno" />
+
+                <RadioButton
+                    android:id="@+id/tamanhoMedio"
+                    style="@style/Opcao"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/medio" />
+
+                <RadioButton
+                    android:id="@+id/tamanhoGrande"
+                    style="@style/Opcao"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/grande" />
+            </RadioGroup>
+
+            <!-- 4. altura independente -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Rotulo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/altura_do_tijolo" />
+
+                <TextView
+                    android:id="@+id/valorAltura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/texto"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sliderAltura"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:progressTint="@color/primario"
+                android:thumbTint="@color/primario" />
+
+            <!-- 5. pre-visualizacao viva -->
+            <TextView
+                style="@style/Rotulo"
+                android:layout_marginTop="16dp"
+                android:text="@string/previa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/previa_nota"
+                android:textColor="@color/texto_secundario"
+                android:textSize="12sp" />
+
+            <br.edu.ucs.brickbreaker.ui.PreviaParedeView
+                android:id="@+id/previa"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fundo_cartao" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 6. salvar / restaurar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/botaoRestaurar"
+            style="@style/Botao.Secundario"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/restaurar" />
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            style="@style/Botao.Primario"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/salvar" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/nota_configuracoes"
+        android:textColor="@color/texto_secundario"
+        android:textSize="12sp" />
+</LinearLayout>

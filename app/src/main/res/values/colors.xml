@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#0E1116</color>
+    <color name="superficie">#171B22</color>
+    <color name="superficie_alta">#202631</color>
+    <color name="linha">#2E3642</color>
+    <color name="texto">#E8ECF1</color>
+    <color name="texto_secundario">#8B96A5</color>
+    <color name="primario">#4FC3F7</color>
+    <color name="primario_texto">#062232</color>
+    <color name="alerta">#EF5350</color>
+    <color name="veu_42">#6B000000</color>
+    <color name="veu_70">#B3000000</color>
+    <color name="hud">#D90E1116</color>
+</resources>
