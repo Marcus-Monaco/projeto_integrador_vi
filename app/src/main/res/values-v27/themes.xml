@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Desenha tambem na faixa do recorte da camera; o HUD e deslocado pelo inset do recorte -->
+    <style name="Tema.BrickBreaker" parent="Base.Tema.BrickBreaker">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

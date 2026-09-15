@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logotipo vetorial (WF-01): tres fileiras de tijolos, bola e paddle -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="128"
+    android:viewportHeight="128">
+    <path android:fillColor="#EF5350" android:pathData="M14,18h30v12h-30z M49,18h30v12h-30z M84,18h30v12h-30z" />
+    <path android:fillColor="#FFB74D" android:pathData="M14,34h30v12h-30z M84,34h30v12h-30z" />
+    <path android:fillColor="#4FC3F7" android:pathData="M14,50h30v12h-30z M49,50h30v12h-30z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M68,80m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <path android:fillColor="#E8ECF1" android:pathData="M40,104h48a6,6 0,0 1,0 12h-48a6,6 0,0 1,0 -12z" />
+</vector>

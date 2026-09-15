@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brick Breaker</string>
+    <string name="subtitulo_app">Projeto Integrador VI-A</string>
+
+    <!-- WF-01 -->
+    <string name="carregando">carregando recursos…</string>
+
+    <!-- WF-02 -->
+    <string name="toque_opcao">toque em uma das opções</string>
+    <string name="jogar">Jogar</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="integrantes">Integrantes</string>
+    <string name="sair">Sair</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="sair_titulo">Sair do jogo?</string>
+    <string name="sair_mensagem">O aplicativo será fechado.</string>
+
+    <!-- WF-03 -->
+    <string name="integrantes_titulo">Integrantes do grupo</string>
+    <string name="integrantes_cabecalho">PROJETO INTEGRADOR VI-A · 2026/2</string>
+    <string name="voltar">Voltar</string>
+    <string name="voltar_ao_menu">Voltar ao menu</string>
+
+    <!-- WF-04 -->
+    <string name="padrao_de_cores">PADRÃO DE CORES DOS TIJOLOS</string>
+    <string name="classico">Clássico</string>
+    <string name="neon">Neon</string>
+    <string name="mono">Mono</string>
+    <string name="livre">Livre</string>
+    <string name="cores_por_resistencia">cores por resistência do tijolo</string>
+    <string name="editar">editar ▸</string>
+    <string name="tamanho_dos_tijolos">TAMANHO DOS TIJOLOS</string>
+    <string name="pequeno">Pequeno\n10 col</string>
+    <string name="medio">Médio\n8 col</string>
+    <string name="grande">Grande\n6 col</string>
+    <string name="altura_do_tijolo">ALTURA DO TIJOLO</string>
+    <string name="valor_dp">%d dp</string>
+    <string name="previa">PRÉ-VISUALIZAÇÃO DA PAREDE</string>
+    <string name="previa_nota">atualiza em tempo real a cada alteração</string>
+    <string name="restaurar">Restaurar</string>
+    <string name="salvar">Salvar</string>
+    <string name="nota_configuracoes">As escolhas valem para todos os níveis da próxima partida.</string>
+    <string name="matiz">Matiz</string>
+    <string name="saturacao">Saturação</string>
+    <string name="brilho">Brilho</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="proxima_cor">Próxima cor</string>
+    <string name="cor_da_resistencia">Cor: %s</string>
+    <string-array name="resistencias">
+        <item>resistência 1</item>
+        <item>resistência 2</item>
+        <item>resistência 3</item>
+        <item>indestrutível</item>
+    </string-array>
+
+    <!-- WF-05 -->
+    <string name="hud_rotulo_nivel">NÍVEL</string>
+    <string name="hud_rotulo_pontos">PONTOS</string>
+    <string name="hud_rotulo_vidas">VIDAS</string>
+    <string name="hud_nivel">%1$d / %2$d</string>
+    <string name="pausar">Pausar</string>
+
+    <!-- WF-11 -->
+    <string name="nivel_n_de_5">NÍVEL %d / 5</string>
+    <string name="voce_perdeu_a_bola">Você perdeu a bola</string>
+    <string name="o_que_deseja">O que deseja fazer agora?</string>
+    <string name="reiniciar_nivel_n">Reiniciar o nível %d</string>
+    <string name="ir_para_nivel_n">Ir para o nível %d</string>
+    <string name="finalizar_partida">Finalizar partida</string>
+
+    <!-- WF-12 -->
+    <string name="nivel_n">NÍVEL %d</string>
+    <string name="resumo_transicao">%1$d tijolos · %2$d vidas restantes</string>
+    <string name="preparando">preparando…</string>
+    <string name="toque_para_comecar">toque para começar imediatamente</string>
+
+    <!-- WF-13 -->
+    <string name="pausa">PAUSA</string>
+    <string name="resumo_pausa">Nível %1$d · %2$s pontos</string>
+    <string name="continuar">Continuar</string>
+    <string name="reiniciar_nivel">Reiniciar nível</string>
+    <string name="sair_para_o_menu">Sair para o menu</string>
+
+    <!-- WF-14 -->
+    <string name="fim_de_jogo">FIM DE JOGO</string>
+    <string name="voce_venceu">VOCÊ VENCEU!</string>
+    <string name="mensagem_derrota">A partida terminou.</string>
+    <string name="mensagem_vitoria">Todas as 5 paredes foram derrubadas.</string>
+    <string name="pontuacao_final">Pontuação final</string>
+    <string name="niveis_concluidos">Níveis concluídos</string>
+    <string name="tijolos_destruidos">Tijolos destruídos</string>
+    <string name="melhor_pontuacao">Melhor pontuação</string>
+    <string name="n_de_total">%1$d de %2$d</string>
+    <string name="jogar_novamente">Jogar novamente</string>
+    <string name="menu_principal">Menu principal</string>
+</resources>

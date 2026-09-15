@@ -14,6 +14,9 @@ keystore.properties
 
 # --- Artefatos de build ---
 *.apk
+# ... exceto o APK de entrega, que precisa estar no repositório (doc 01, secao 8.6)
+!apk/*.apk
+hs_err_pid*.log
 *.aab
 *.ap_
 *.dex

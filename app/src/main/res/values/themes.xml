@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Tema.BrickBreaker" parent="Base.Tema.BrickBreaker" />
+
+    <style name="Base.Tema.BrickBreaker" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryDark">@color/fundo</item>
+        <item name="colorAccent">@color/primario</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="alertDialogTheme">@style/Tema.BrickBreaker.Dialogo</item>
+    </style>
+
+    <style name="Tema.BrickBreaker.Dialogo" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/primario</item>
+        <item name="android:windowBackground">@drawable/fundo_cartao</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+    </style>
+
+    <!-- Botoes: a hierarquia visual segue o WF-02 (primario, secundario, terciario tracejado) -->
+    <style name="Botao" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Botao.Primario">
+        <item name="android:layout_height">66dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/botao_primario</item>
+        <item name="android:textColor">@color/primario_texto</item>
+    </style>
+
+    <style name="Botao.Secundario">
+        <item name="android:background">@drawable/botao_secundario</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Botao.Terciario">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/botao_terciario</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+    </style>
+
+    <style name="Rotulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+    </style>
+
+    <style name="Opcao">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/opcao</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

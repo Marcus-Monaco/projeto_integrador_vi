@@ -23,8 +23,18 @@ Este documento registra **onde** o aplicativo é desenvolvido, **com o quê** é
 | `minSdk` / `targetSdk` | 24 (Android 7.0) / 35 (Android 15) |
 | Artefato de entrega | `app-release.apk` assinado, gerado via Gradle |
 
-> **Nota para o grupo:** ao instalar o ambiente, anote aqui as versões exatas que ficaram na sua máquina
-> (Android Studio, AGP, Gradle, JDK). Isso evita o clássico "na minha máquina funciona".
+### Versões usadas no build de entrega
+
+| Componente | Versão |
+| --- | --- |
+| Android Gradle Plugin | 8.7.3 |
+| Gradle (fixado pelo wrapper) | 8.10.2 |
+| Kotlin | 2.0.21 |
+| JDK | Temurin 17.0.20 |
+| Android SDK Platform / Build-Tools | 35 / 35.0.0 |
+| Emulador de teste | AVD API 34 (Google APIs, x86_64), 720 × 1600 a 320 dpi = 360 × 800 dp |
+
+Mantendo essas versões, o build é o mesmo em qualquer máquina.
 
 ---
 
@@ -85,28 +95,37 @@ componentes de tela convencionais.
 ### 3.2 Divisão de responsabilidades
 
 ```
-app/src/main/java/br/edu/<grupo>/brickbreaker/
+app/src/main/java/br/edu/ucs/brickbreaker/
 ├── ui/
+│   ├── TelaCheiaActivity.kt         base de todas as telas: modo imersivo (requisito a)
 │   ├── SplashActivity.kt            WF-01
 │   ├── MenuActivity.kt              WF-02  (as 3 opções)
 │   ├── IntegrantesActivity.kt       WF-03  (RecyclerView)
-│   ├── ConfiguracoesActivity.kt     WF-04  (cores e tamanhos)
-│   └── JogoActivity.kt              WF-05  (hospeda o SurfaceView e o HUD)
+│   ├── ConfiguracoesActivity.kt     WF-04  (cores, tamanhos e pré-visualização)
+│   ├── JogoActivity.kt              WF-05, WF-11, WF-12, WF-13 (SurfaceView, HUD e sobreposições)
+│   └── FimDeJogoActivity.kt         WF-14  (fim de jogo / vitória)
 ├── jogo/
-│   ├── JogoView.kt                  SurfaceView + SurfaceHolder.Callback
+│   ├── JogoView.kt                  SurfaceView + SurfaceHolder.Callback + toque
 │   ├── LacoDeJogo.kt                thread do laço, passo fixo de 16 ms
-│   ├── Bola.kt · Paddle.kt          entidades e física
-│   ├── Colisao.kt                   varredura de colisão (requisito d)
+│   ├── Motor.kt                     estado da partida, física e fluxo de colisão (requisito d)
+│   ├── Colisao.kt                   swept AABB: tempo de impacto e face atingida
+│   ├── Bola.kt                      entidades Bola e Paddle
+│   ├── Caixa.kt                     retângulo sem dependência de Android (testável na JVM)
 │   └── Renderizador.kt              desenho no Canvas
 ├── niveis/
-│   ├── Parede.kt                    matriz de tijolos
-│   ├── Tijolo.kt                    posição, resistência, cor
-│   └── GeradorDeParede.kt           os 5 métodos (ver documento 03)
+│   ├── Parede.kt                    matriz de tijolos posicionada na tela
+│   ├── Tijolo.kt                    posição e resistência
+│   ├── GeradorDeParede.kt           os 5 métodos (ver documento 03)
+│   └── Aleatorio.kt                 PRNG mulberry32 com semente
 ├── dados/
-│   └── Preferencias.kt              DataStore: paleta, colunas, altura
+│   ├── Paletas.kt                   Clássico, Neon, Mono e Livre
+│   └── Preferencias.kt              DataStore: paleta, colunas, altura, melhor pontuação
 └── audio/
     └── Sons.kt                      SoundPool: início de fase e rebatida
 ```
+
+O motor (`jogo/Motor.kt`, `jogo/Colisao.kt`) e a geração das paredes (`niveis/`) não usam classes do
+Android. Por isso rodam em testes unitários puros, em `app/src/test/`.
 
 ### 3.3 Justificativa comparada
 
@@ -301,21 +320,27 @@ adb install -r app-release.apk
 
 ### 8.5 Lista de conferência da entrega
 
-- [ ] `versionName` e `versionCode` atualizados em `app/build.gradle.kts`
-- [ ] Ícone do aplicativo e `android:label` definidos (nada de "My Application")
+- [x] `versionName` e `versionCode` atualizados em `app/build.gradle.kts`
+- [x] Ícone do aplicativo e `android:label` definidos (nada de "My Application")
 - [ ] `./gradlew clean assembleRelease` conclui sem erros a partir de um clone limpo
-- [ ] `apksigner verify` confirma a assinatura
+- [x] `apksigner verify` confirma a assinatura
 - [ ] APK instalado e jogado do início ao fim em pelo menos um **aparelho físico**
 - [ ] Os 5 níveis são alcançáveis e o avanço entre eles é automático
 - [ ] Os dois sons tocam (início de fase e rebatida no paddle)
-- [ ] O APK está anexado à entrega **e** publicado em *Releases* no GitHub
-- [ ] Nomes reais dos integrantes no README e na tela de Integrantes
+- [ ] O APK está na pasta `apk/` do repositório **e** publicado em *Releases* no GitHub
+- [x] Nomes reais dos integrantes no README e na tela de Integrantes
 
 ### 8.6 Publicação do APK no repositório
 
-O APK **não é versionado** dentro do repositório (arquivos binários grandes poluem o histórico do Git).
-Ele é publicado como *release*:
+A entrega exige o APK dentro do repositório, então o APK assinado de cada versão fica em
+[`apk/`](../apk/), com o nome `brick-breaker-v<versão>.apk`. O `.gitignore` continua barrando qualquer
+outro `.apk`, e só essa pasta é liberada. Assim os APKs de build intermediários não entram no histórico.
 
-*GitHub ▸ Releases ▸ Draft a new release ▸ tag `v1.0.0` ▸ anexar `app-release.apk` ▸ Publish*
+```bash
+./gradlew clean assembleRelease
+cp app/build/outputs/apk/release/app-release.apk apk/brick-breaker-v1.0.0.apk
+```
 
-Assim o professor baixa o arquivo por um link estável e o repositório continua leve.
+O mesmo arquivo também pode ser publicado como *release*, o que dá ao professor um link estável de download:
+
+*GitHub ▸ Releases ▸ Draft a new release ▸ tag `v1.0.0` ▸ anexar `brick-breaker-v1.0.0.apk` ▸ Publish*

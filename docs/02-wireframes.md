@@ -88,9 +88,9 @@ Lista de **nome e sobrenome de todos os integrantes**, alimentada por uma `Recyc
 lista estática no código. A frente de trabalho é informação complementar e pode ser retirada
 sem quebrar o layout.
 
-> ⚠️ Faltam os sobrenomes de **Henrique** e **Luan**. O enunciado exige nome **e** sobrenome de todos.
-> Ao completar, atualizar o array `linhas` da função `wf03` em [`tools/gen-wireframes.mjs`](../tools/gen-wireframes.mjs)
-> e a tabela do [README](../README.md#integrantes-do-grupo), regerando com `node tools/gen-wireframes.mjs`.
+No aplicativo, a lista fica em [`IntegrantesActivity.kt`](../app/src/main/java/br/edu/ucs/brickbreaker/ui/IntegrantesActivity.kt)
+e traz o nome e o sobrenome completos dos cinco integrantes, iguais aos da tabela do
+[README](../README.md#integrantes-do-grupo).
 
 ---
 

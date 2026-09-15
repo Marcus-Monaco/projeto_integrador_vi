@@ -459,6 +459,11 @@ Saber **qual face** foi atingida é o que permite refletir no eixo certo: bater 
 velocidade horizontal, bater embaixo inverte a vertical. Um teste ingênuo de sobreposição não distingue
 os dois casos e produz aquele ricochete "grudento" clássico de implementações apressadas.
 
+> **Na implementação** ([`Colisao.kt`](../app/src/main/java/br/edu/ucs/brickbreaker/jogo/Colisao.kt)) há um
+> cuidado a mais: com velocidade zero em um eixo, só existe impacto se a bola já estiver sobreposta ao tijolo
+> nesse eixo. Sem essa guarda, uma bola subindo na vertical "acertaria" tijolos de outras colunas. O
+> retângulo é a classe `Caixa`, e não `RectF`, para que o motor rode em teste unitário sem Android.
+
 ### 7.4 Restringir os candidatos pela malha
 
 Testar a bola contra os 40 tijolos a cada subpasso é desperdício. Como a parede **é** uma malha regular,
@@ -539,3 +544,10 @@ Os números vêm de `wireframes/paredes.json`, gerado pelo mesmo código que des
 
 Os testes de geração de parede são testes unitários puros (`src/test`), sem dependência do Android — rodam
 em segundos e são o melhor lugar para travar o comportamento antes de mexer no motor.
+
+Todos estão implementados e passam (`./gradlew testDebugUnitTest`):
+[`GeradorDeParedeTest.kt`](../app/src/test/java/br/edu/ucs/brickbreaker/niveis/GeradorDeParedeTest.kt),
+[`ColisaoTest.kt`](../app/src/test/java/br/edu/ucs/brickbreaker/jogo/ColisaoTest.kt) e
+[`MotorTest.kt`](../app/src/test/java/br/edu/ucs/brickbreaker/jogo/MotorTest.kt). Além da lista acima,
+`matrizesIguaisAsDaDocumentacao` confere, caractere por caractere, que as 5 paredes do app são as mesmas
+desta página e dos wireframes.
